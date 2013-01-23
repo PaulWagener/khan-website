@@ -334,7 +334,7 @@ class StartNewBadgeMapReduce(request_handler.RequestHandler):
                 reader_parameters = {"entity_kind": "user_models.UserData"},
                 mapreduce_parameters = {"processing_rate": 250},
                 shard_count = 64,
-                queue_name = "user-badge-queue"
+                queue_name = "glue-queue"
                 )
 
         self.response.out.write("OK: " + str(mapreduce_id))

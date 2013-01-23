@@ -6,7 +6,7 @@ import user_models
 
 # CUSTOMIZE set queue_name to something other than "default"
 # if you'd like to use a non-default task queue.
-QUEUE_NAME = "gae-bingo-queue"
+QUEUE_NAME = "glue-queue"
 
 # CUSTOMIZE can_see_experiments however you want to specify
 # whether or not the currently-logged-in user has access
