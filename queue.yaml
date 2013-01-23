@@ -6,23 +6,8 @@ queue:
 - name: exercise-statistics-mapreduce-queue
   rate: 5/s
 
-- name: backfill-mapreduce-queue
-  rate: 5/s
-
-- name: youtube-sync-queue
-  rate: 5/s
-
 - name: voting-queue
   rate: 5/s
-
-- name: problem-log-queue
-  rate: 100/s
-
-- name: video-log-queue
-  rate: 140/s
-
-- name: log-summary-queue
-  rate: 60/s
 
 - name: activity-summary-queue
   rate: 10/s
@@ -40,9 +25,6 @@ queue:
   rate: 1/s
 
 - name: topics-set-default-queue
-  rate: 1/s
-
-- name: subtitles-fetch-queue
   rate: 1/s
 
 - name: import-queue
