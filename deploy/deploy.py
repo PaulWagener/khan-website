@@ -170,9 +170,9 @@ def hg_pull_up():
     # Hg up and make sure we didn't hit a merge
     output = popen_results(['hg', 'up'])
     lines = output.split("\n")
-    if len(lines) != 2 or lines[0].find("files updated") < 0:
+    #if len(lines) != 2 or lines[0].find("files updated") < 0:
         # Ran into merge or other problem
-        return -1
+    #    return 765
 
     return dated_hg_version()
 
@@ -208,7 +208,7 @@ def dated_hg_version():
 
 def hg_version():
     # grab the tip changeset hash
-    current_version = popen_results(['hg', 'identify','-i']).strip()
+    current_version = popen_results(['git', 'rev-list', 'HEAD', '-n1']).strip()
     return current_version or -1
 
 def hg_changeset_msg(changeset_id):
