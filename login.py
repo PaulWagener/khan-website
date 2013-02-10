@@ -510,7 +510,7 @@ class Signup(request_handler.RequestHandler):
 
         if not App.is_dev_server:
             mail.send_mail(
-                    sender='Khan Academy Accounts <no-reply@khanacademy.org>',
+                    sender='Khan Academy Accounts <mail@paulwagener.nl>',
                     to=recipient,
                     subject="Verify your email with Khan Academy",
                     body=body)
@@ -965,7 +965,7 @@ class ForgotPassword(request_handler.RequestHandler):
 
         if not App.is_dev_server:
             mail.send_mail(
-                    sender="Khan Academy Accounts <no-reply@khanacademy.org>",
+                    sender="Khan Academy Accounts <mail@paulwagener.nl>",
                     to=email,
                     subject="Khan Academy account recovery",
                     body=body)
