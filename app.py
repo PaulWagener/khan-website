@@ -44,7 +44,7 @@ for attr in [
     else:
         setattr(App, attr, None)
 
-if App.is_dev_server and App.token_recipe_key is None:
+if App.token_recipe_key is None:
     # If a key is missing to dishout auth tokens on dev, we can't login with
     # our own auth system. So just set it to a random string.
     App.token_recipe_key = 'lkj9Hg7823afpEOI3nmlkfl3jfnklsfQQ'
