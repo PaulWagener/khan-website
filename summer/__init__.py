@@ -28,7 +28,7 @@ from .models import SummerPaypalTransaction, SummerStudent, SummerParentData
 
 PAYPAL_URL = "https://www.paypal.com/cgi-bin/webscr"
 
-FROM_EMAIL = "mail@paulwagener.nl"
+FROM_EMAIL = "accounts@khan-strabrecht.appspotmail.com"
 
 class PaypalIPN(request_handler.RequestHandler):
     @user_util.open_access

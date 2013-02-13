@@ -7,7 +7,7 @@ from app import App
 import request_handler
 import user_util
 
-FROM_EMAIL = "no-reply@khan-academy.appspotmail.com"
+FROM_EMAIL = "no-reply@khan-strabrecht.appspotmail.com"
 TO_EMAIL = "testimonials@khanacademy.org"
 
 

@@ -12,7 +12,7 @@ import user_util
 #PAYPAL_IPN_URL = "https://www.sandbox.paypal.com/cgi-bin/webscr"
 PAYPAL_IPN_URL = "https://www.paypal.com/cgi-bin/webscr"
 
-FROM_EMAIL = "no-reply@khan-academy.appspotmail.com"
+FROM_EMAIL = "no-reply@khan-strabrecht.appspotmail.com"
 
 class AutoReturn(request_handler.RequestHandler):
     @user_util.open_access
